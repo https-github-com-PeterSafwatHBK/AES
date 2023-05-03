@@ -1,4 +1,4 @@
-module InvSBOX(input [7:0] selector, output reg[7:0] sbout);
+module InvSBOX(input [0:7] selector, output reg[0:7] sbout);
 always@(*)
  begin  
     case(selector)
