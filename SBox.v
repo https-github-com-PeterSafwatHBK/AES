@@ -1,6 +1,6 @@
 module SBOX(a,c);
- input  [7:0] a;
- output reg[7:0] c;
+ input  [0:7] a;
+ output reg[0:7] c;
 
 always@(a)
  begin

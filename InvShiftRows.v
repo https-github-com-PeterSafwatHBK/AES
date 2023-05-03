@@ -1,6 +1,6 @@
 module InvShiftRows (
-    input word [127:0],
-    output shifted [127:0];
+    input [0:127] word ,
+    output [0:127] shifted 
 );
     //First Row (No Shifting)
     assign shifted[0+:8] = word[0+:8];
@@ -23,7 +23,7 @@ module InvShiftRows (
     //Fourth Row
     assign shifted[24+:8] = word[56+:8];
 	assign shifted[56+:8] = word[88+:8];
-	assign shifted[56+:8] = word[120+:8];
+	assign shifted[88+:8] = word[120+:8];
     assign shifted[120+:8] = word[24+:8];
 
 
