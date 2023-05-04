@@ -1,2 +1,21 @@
-# Reading pref.tcl
-# OpenFile {E:/CUFE/CMP01 2026/second term/Logic Design/project/AES/AES/Subbytes_tb.v}
+# vsim work.Decrypt 
+# Start time: 02:23:37 on May 05,2023
+# Loading work.Decrypt
+# Loading work.KeyExpansion
+# Loading work.AddRoundKey
+# Loading work.InvSubBytes
+# Loading work.InvShiftRows
+# Loading work.DeCipher
+# Loading work.InvMixColumns
+# Loading work.invMix
+# Loading work.InvSBOX
+add wave sim:/Decrypt/*
+force -freeze sim:/Decrypt/in 'h69c4e0d86a7b0430d8cdb78070b4c55a 0
+noforce sim:/Decrypt/key
+force -freeze sim:/Decrypt/key 'h000102030405060708090a0b0c0d0e0f 0
+run
+run
+run
+run
+# End time: 02:24:42 on May 05,2023, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0

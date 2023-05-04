@@ -1,4 +1,4 @@
-module my_module #(parameter NK = 8) (
+module KeyExpansion #(parameter NK = 4) (
 	input [0:(32*NK)-1] Key,
 	output reg[0:(4*(NK+6+1)*32)-1] Words
 );
